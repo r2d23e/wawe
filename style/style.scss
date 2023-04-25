@@ -1,0 +1,3314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+
+$tc0: #F8F8F8;
+$tc1: #ffffff;
+$tc2: #0D302C;
+$tc3: #000000;
+$tc4: #242121;
+$tc5: #01353E;
+$tc6: #0000FF;
+$tc7: #C4C4C4;
+$tc8: #00B2A0;
+
+$for_curc: #00B2A0;
+$for_border: #DADADA;
+
+@mixin for_text ($ff, $fs, $fw, $lh, $ls, $ta, $ct) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-align: $ta;
+    color: $ct;
+}
+
+
+
+
+
+@media (max-width:2560px) {
+
+    .wrap {
+        width: 100%;
+        height: 11500px;
+
+        .hed {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            z-index: 5;
+            background-color: #00000043;
+
+            .img1 {
+                border: none;
+                z-index: 5;
+            }
+
+            .img10 {
+                display: none;
+            }
+
+            .navbar {
+                width: 70%;
+                display: flex;
+                z-index: 5;
+
+                ul {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    li .a1 {
+                        text-transform: uppercase;
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 28px, 1px, left, $tc1 )
+                    }
+
+                    .a1:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 28px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .sec1 {
+            width: 100%;
+            height: 1000px;
+            background-image: url(../img/Rectangle75.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .shadow {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+
+            .con1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 40%;
+                height: 85%;
+
+                .box1 {
+                    height: 85%;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .textbox1 {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        .h1 {
+                            height: 25%;
+                            @include for_text(raleway, 200px, 700, 21px, 1px, left, $tc2 )
+                        }
+
+                        .p1 {
+                            @include for_text(roboto, 24px, 400, 21px, 1px, left, $tc3 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec2 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 10px, left, $tc3 )
+            }
+
+
+            .textboxes {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+
+
+
+
+                .text1 {
+
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+
+
+                    .p2 {
+                        height: 25%;
+                        @include for_text(roboto, 24px, 300, 20px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec3 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: $tc0;
+
+            .h21 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 58px, 1px, left, $tc5 )
+            }
+
+
+            .what_have {
+                width: 60%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .boxes {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .with_img {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        h2 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .p3 {
+                        height: 55%;
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+
+            .info {
+                width: 60%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                .with_wave {
+                    width: 30%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .wawes {
+                        .procent_wawes {
+                            display: flex;
+
+                            .p4 {
+                                @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4)
+                            }
+                        }
+
+                        .p5 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+
+                .textbox2 {
+                    height: 80%;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .p6 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4)
+                    }
+                }
+            }
+        }
+
+        .sec4 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .textbox3 {
+                width: 27%;
+                height: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+                }
+
+                .with_smalltext {
+                    width: 100%;
+                    height: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    p {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec5 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .navigation {
+                width: 61.3%;
+                height: 75%;
+
+                .textbox4 {
+                    width: 53%;
+                    height: 60px;
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        li .a2 {
+                            text-transform: uppercase;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc5);
+                            transition: 400ms;
+                        }
+
+                        .a2:hover {
+                            cursor: pointer;
+                            transition: 400ms;
+                            text-decoration: underline;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                        }
+                    }
+                }
+
+                .imgbox {
+                    width: 1200px;
+                    height: 600px;
+                    display: grid;
+                    gap: 40px;
+
+                    grid-template-columns: repeat(4, 1fr);
+
+
+                    .grid {
+
+                        transition: 400ms;
+                    }
+
+                    .grid:hover {
+                        filter: blur(3px);
+                        transition: 400ms;
+                    }
+
+                    .grid:nth-child(1) {
+                        grid-area: 1/1/2/3;
+                        background-image: url(../img/Rectangle\ 89.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(2) {
+                        grid-area: 1/3/2/4;
+                        background-image: url(../img/Rectangle\ 91.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(3) {
+                        grid-area: 1/4/2/5;
+                        background-image: url(../img/Rectangle\ 93.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(4) {
+                        grid-area: 2/1/3/2;
+                        background-image: url(../img/Rectangle\ 94.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(5) {
+                        grid-area: 2/2/3/3;
+                        background-image: url(../img/Rectangle\ 92.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(6) {
+                        grid-area: 2/3/3/5;
+                        background-image: url(../img/Rectangle\ 90.png);
+                        background-size: cover;
+                    }
+
+                }
+            }
+
+            .but1 {
+                width: 20%;
+                height: 60px;
+                background-color: $tc1;
+                border: 2px solid $tc7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 400ms;
+
+                .p8 {
+                    text-transform: uppercase;
+                    @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .but1:hover {
+                border: 2px solid $tc3;
+                transition: 400ms;
+            }
+        }
+
+        .sec6 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .textbox5 {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    font-style: italic;
+                    @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                }
+
+                .with_p {
+                    width: 40%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .p9 {
+                    font-style: italic;
+                    @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .vid1 {
+                width: 55%;
+                height: 65%;
+            }
+        }
+
+        .statistic {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+
+            .static {
+                width: 50%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+
+
+                .textbox6 {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 64px, 700, 76px, 1px, left, $tc5 )
+                    }
+
+                    .p10 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec7 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .with_img2 {
+                width: 100%;
+                height: 80%;
+                background-color: rgba(0, 0, 0, 0.315);
+                background-image: url(../img/Rectangle\ 103.png);
+                background-size: cover;
+
+                .shadov {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0000003e;
+
+                    .textbox7 {
+                        width: 30%;
+
+                        position: relative;
+                        left: 50%;
+                        top: 45%;
+                        z-index: 5;
+
+                        h2 {
+                            @include for_text(roboto, 48px, 400, 56px, 1px, left, $tc1 )
+                        }
+
+                        .p11 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc1 )
+                        }
+                    }
+
+                    .curcle {
+                        width: 25%;
+                        position: relative;
+                        left: 35%;
+                        top: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        z-index: 5;
+
+                        .curc {
+                            width: 15px;
+                            height: 15px;
+                            background-color: $tc1;
+                            border-radius: 50%;
+                            transition: 400ms;
+                        }
+
+                        .curc:hover {
+                            background-color: $for_curc;
+                            transition: 400ms;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec8 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .human {
+                width: 69%;
+                display: flex;
+                justify-content: space-between;
+
+                .person {
+                    height: 100%;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-items: center;
+
+                    .textbox8 {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        h2 {
+                            @include for_text(roboto, 18px, 700, 18px, 1px, left, $tc4 )
+                        }
+
+                        .p12 {
+                            @include for_text(roboto, 14px, 700, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec9 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .servisces {
+                width: 70%;
+                height: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .box2 {
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                    }
+
+                    ul {
+                        width: 80%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        li {
+                            @include for_text(roboto, 14px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec10 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec11 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .zayav {
+                width: 80%;
+                height: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                .form {
+                    width: 45%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .first {
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .second {
+
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .third {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            width: 30%;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 30%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .but2 {
+                        width: 40%;
+                        height: 10%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $tc1;
+                        border: 1px solid $tc7;
+                        transition: 400ms;
+
+                        .p13 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .but2:hover {
+                        border: 1px solid $tc6;
+                        transition: 400ms;
+                    }
+                }
+            }
+
+            .textbox9 {
+                width: 45%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .textbox10 {
+                    width: 50%;
+                    height: 10%;
+
+                    .p14 {
+                        @include for_text(roboto, 24px, 400, 30px, 1px, left, $tc4 )
+                    }
+
+                }
+            }
+
+            .social {
+                width: 40%;
+                height: 10%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .h5 {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                    }
+
+                }
+
+                .h5:nth-child(2) {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc8 )
+                    }
+
+                }
+
+                .h5 {
+                    .a3:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .foot {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tc8;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1960px) {
+
+    .wrap {
+        width: 100%;
+        height: 11500px;
+
+        .hed {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            z-index: 5;
+            background-color: #00000043;
+
+            .img1 {
+                border: none;
+                z-index: 5;
+            }
+
+            .img10 {
+                display: none;
+            }
+
+            .navbar {
+                width: 70%;
+                display: flex;
+                z-index: 5;
+
+                ul {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    li .a1 {
+                        text-transform: uppercase;
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 28px, 1px, left, $tc1 )
+                    }
+
+                    .a1:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 28px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .sec1 {
+            width: 100%;
+            height: 1000px;
+            background-image: url(../img/Rectangle75.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .shadow {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+
+            .con1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 40%;
+                height: 85%;
+
+                .box1 {
+                    height: 85%;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .textbox1 {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        .h1 {
+                            height: 25%;
+                            @include for_text(raleway, 200px, 700, 21px, 1px, left, $tc2 )
+                        }
+
+                        .p1 {
+                            @include for_text(roboto, 24px, 400, 21px, 1px, left, $tc3 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec2 {
+            width: 100%;
+            height: 1000px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 10px, left, $tc3 )
+            }
+
+
+            .textboxes {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+
+
+
+                .text1 {
+
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+
+
+                    .p2 {
+                        height: 25%;
+                        @include for_text(roboto, 24px, 300, 20px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec3 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: $tc0;
+
+            .h21 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 58px, 1px, left, $tc5 )
+            }
+
+
+            .what_have {
+                width: 60%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .boxes {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .with_img {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        h2 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .p3 {
+                        height: 55%;
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+
+            .info {
+                width: 60%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                .with_wave {
+                    width: 30%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .wawes {
+                        .procent_wawes {
+                            display: flex;
+
+                            .p4 {
+                                @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4)
+                            }
+                        }
+
+                        .p5 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+
+                .textbox2 {
+                    height: 80%;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .p6 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4)
+                    }
+                }
+            }
+        }
+
+        .sec4 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .textbox3 {
+                width: 27%;
+                height: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+                }
+
+                .with_smalltext {
+                    width: 100%;
+                    height: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    p {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec5 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .navigation {
+                width: 61.3%;
+                height: 75%;
+
+                .textbox4 {
+                    width: 53%;
+                    height: 60px;
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        li .a2 {
+                            text-transform: uppercase;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc5);
+                            transition: 400ms;
+                        }
+
+                        .a2:hover {
+                            cursor: pointer;
+                            transition: 400ms;
+                            text-decoration: underline;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                        }
+                    }
+                }
+
+                .imgbox {
+                    width: 1200px;
+                    height: 600px;
+                    display: grid;
+                    gap: 40px;
+
+                    grid-template-columns: repeat(4, 1fr);
+
+
+                    .grid {
+
+                        transition: 400ms;
+                    }
+
+                    .grid:hover {
+                        filter: blur(3px);
+                        transition: 400ms;
+                    }
+
+                    .grid:nth-child(1) {
+                        grid-area: 1/1/2/3;
+                        background-image: url(../img/Rectangle\ 89.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(2) {
+                        grid-area: 1/3/2/4;
+                        background-image: url(../img/Rectangle\ 91.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(3) {
+                        grid-area: 1/4/2/5;
+                        background-image: url(../img/Rectangle\ 93.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(4) {
+                        grid-area: 2/1/3/2;
+                        background-image: url(../img/Rectangle\ 94.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(5) {
+                        grid-area: 2/2/3/3;
+                        background-image: url(../img/Rectangle\ 92.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(6) {
+                        grid-area: 2/3/3/5;
+                        background-image: url(../img/Rectangle\ 90.png);
+                        background-size: cover;
+                    }
+
+                }
+            }
+
+            .but1 {
+                width: 20%;
+                height: 60px;
+                background-color: $tc1;
+                border: 2px solid $tc7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 400ms;
+
+                .p8 {
+                    text-transform: uppercase;
+                    @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .but1:hover {
+                border: 2px solid $tc3;
+                transition: 400ms;
+            }
+        }
+
+        .sec6 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .textbox5 {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    font-style: italic;
+                    @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                }
+
+                .with_p {
+                    width: 40%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .p9 {
+                    font-style: italic;
+                    @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .vid1 {
+                width: 55%;
+                height: 65%;
+            }
+        }
+
+        .statistic {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+
+            .static {
+                width: 50%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+
+
+                .textbox6 {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 64px, 700, 76px, 1px, left, $tc5 )
+                    }
+
+                    .p10 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec7 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .with_img2 {
+                width: 100%;
+                height: 80%;
+                background-color: rgba(0, 0, 0, 0.315);
+                background-image: url(../img/Rectangle\ 103.png);
+                background-size: cover;
+
+                .shadov {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0000003e;
+
+                    .textbox7 {
+                        width: 30%;
+
+                        position: relative;
+                        left: 50%;
+                        top: 45%;
+                        z-index: 5;
+
+                        h2 {
+                            @include for_text(roboto, 48px, 400, 56px, 1px, left, $tc1 )
+                        }
+
+                        .p11 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc1 )
+                        }
+                    }
+
+                    .curcle {
+                        width: 25%;
+                        position: relative;
+                        left: 35%;
+                        top: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        z-index: 5;
+
+                        .curc {
+                            width: 15px;
+                            height: 15px;
+                            background-color: $tc1;
+                            border-radius: 50%;
+                            transition: 400ms;
+                        }
+
+                        .curc:hover {
+                            background-color: $for_curc;
+                            transition: 400ms;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec8 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .human {
+                width: 69%;
+                display: flex;
+                justify-content: space-between;
+
+                .person {
+                    height: 100%;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-items: center;
+
+                    .textbox8 {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        h2 {
+                            @include for_text(roboto, 18px, 700, 18px, 1px, left, $tc4 )
+                        }
+
+                        .p12 {
+                            @include for_text(roboto, 14px, 700, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec9 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .servisces {
+                width: 70%;
+                height: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .box2 {
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                    }
+
+                    ul {
+                        width: 80%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        li {
+                            @include for_text(roboto, 14px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec10 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec11 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .zayav {
+                width: 80%;
+                height: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                .form {
+                    width: 45%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .first {
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .second {
+
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .third {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            width: 30%;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 30%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .but2 {
+                        width: 40%;
+                        height: 10%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $tc1;
+                        border: 1px solid $tc7;
+                        transition: 400ms;
+
+                        .p13 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .but2:hover {
+                        border: 1px solid $tc6;
+                        transition: 400ms;
+                    }
+                }
+            }
+
+            .textbox9 {
+                width: 45%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .textbox10 {
+                    width: 50%;
+                    height: 10%;
+
+                    .p14 {
+                        @include for_text(roboto, 24px, 400, 30px, 1px, left, $tc4 )
+                    }
+
+                }
+            }
+
+            .social {
+                width: 40%;
+                height: 10%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .h5 {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                    }
+
+                }
+
+                .h5:nth-child(2) {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc8 )
+                    }
+
+                }
+
+                .h5 {
+                    .a3:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .foot {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tc8;
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width:1660px) {
+
+    .wrap {
+        width: 100%;
+        height: 11500px;
+
+        .hed {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            z-index: 5;
+            background-color: #00000043;
+
+            .img1 {
+                border: none;
+                z-index: 5;
+            }
+
+            .img10 {
+                display: none;
+            }
+
+            .navbar {
+                width: 70%;
+                display: flex;
+                z-index: 5;
+
+                ul {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    li .a1 {
+                        text-transform: uppercase;
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 28px, 1px, left, $tc1 )
+                    }
+
+                    .a1:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 28px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .sec1 {
+            width: 100%;
+            height: 1000px;
+            background-image: url(../img/Rectangle75.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .shadow {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+
+            .con1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 70%;
+                height: 85%;
+
+                .box1 {
+                    height: 85%;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .textbox1 {
+                        width: 100%;
+                        height: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        .h1 {
+
+                            @include for_text(raleway, 200px, 700, 21px, 1px, left, $tc2 )
+                        }
+
+                        .p1 {
+                            @include for_text(roboto, 24px, 400, 21px, 1px, left, $tc3 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec2 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 10px, left, $tc3 )
+            }
+
+
+            .textboxes {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+
+
+
+
+                .text1 {
+
+                    width: 35%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+
+
+                    .p2 {
+                        height: 25%;
+                        @include for_text(roboto, 24px, 300, 20px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec3 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: $tc0;
+
+            .h21 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 58px, 1px, left, $tc5 )
+            }
+
+
+            .what_have {
+                width: 80%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .boxes {
+                    width: 32%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .with_img {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        h2 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .p3 {
+                        height: 55%;
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+
+            .info {
+                width: 80%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                .with_wave {
+                    width: 30%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .wawes {
+                        .procent_wawes {
+                            display: flex;
+
+                            .p4 {
+                                @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4)
+                            }
+                        }
+
+                        .p5 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+
+                .textbox2 {
+                    height: 80%;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .p6 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4)
+                    }
+                }
+            }
+        }
+
+        .sec4 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .img9 {
+                width: 50%;
+                height: 70%;
+            }
+
+            .textbox3 {
+                width: 40%;
+                height: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+                }
+
+                .with_smalltext {
+                    width: 100%;
+                    height: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    p {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec5 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .navigation {
+                width: 61.3%;
+                height: 60%;
+
+                .textbox4 {
+                    width: 53%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        li .a2 {
+                            text-transform: uppercase;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc5);
+                            transition: 400ms;
+                        }
+
+                        .a2:hover {
+                            cursor: pointer;
+                            transition: 400ms;
+                            text-decoration: underline;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                        }
+                    }
+                }
+
+                .imgbox {
+                    width: 100%;
+                    height: 480px;
+                    display: grid;
+                    gap: 40px;
+
+                    grid-template-columns: repeat(4, 1fr);
+
+
+
+                    .grid {
+
+                        transition: 400ms;
+                    }
+
+                    .grid:hover {
+                        filter: blur(3px);
+                        transition: 400ms;
+                    }
+
+                    .grid:nth-child(1) {
+                        grid-area: 1/1/2/3;
+                        background-image: url(../img/Rectangle\ 89.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(2) {
+                        grid-area: 1/3/2/4;
+                        background-image: url(../img/Rectangle\ 91.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(3) {
+                        grid-area: 1/4/2/5;
+                        background-image: url(../img/Rectangle\ 93.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(4) {
+                        grid-area: 2/1/3/2;
+                        background-image: url(../img/Rectangle\ 94.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(5) {
+                        grid-area: 2/2/3/3;
+                        background-image: url(../img/Rectangle\ 92.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(6) {
+                        grid-area: 2/3/3/5;
+                        background-image: url(../img/Rectangle\ 90.png);
+                        background-size: cover;
+                    }
+
+                }
+            }
+
+            .but1 {
+                width: 20%;
+                height: 60px;
+                background-color: $tc1;
+                border: 2px solid $tc7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 400ms;
+
+                .p8 {
+                    text-transform: uppercase;
+                    @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .but1:hover {
+                border: 2px solid $tc3;
+                transition: 400ms;
+            }
+        }
+
+        .sec6 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .textbox5 {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    font-style: italic;
+                    @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                }
+
+                .with_p {
+                    width: 40%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .p9 {
+                    font-style: italic;
+                    @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .vid1 {
+                width: 55%;
+                height: 65%;
+            }
+        }
+
+        .statistic {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+
+            .static {
+                width: 50%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+
+
+                .textbox6 {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 64px, 700, 76px, 1px, left, $tc5 )
+                    }
+
+                    .p10 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec7 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .with_img2 {
+                width: 100%;
+                height: 80%;
+                background-color: rgba(0, 0, 0, 0.315);
+                background-image: url(../img/Rectangle\ 103.png);
+                background-size: cover;
+
+                .shadov {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0000003e;
+
+                    .textbox7 {
+                        width: 37%;
+
+                        position: relative;
+                        left: 53%;
+                        top: 40%;
+                        z-index: 5;
+
+                        h2 {
+                            @include for_text(roboto, 48px, 400, 56px, 1px, left, $tc1 )
+                        }
+
+                        .p11 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc1 )
+                        }
+                    }
+
+                    .curcle {
+                        width: 25%;
+                        position: relative;
+                        left: 35%;
+                        top: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        z-index: 5;
+
+                        .curc {
+                            width: 15px;
+                            height: 15px;
+                            background-color: $tc1;
+                            border-radius: 50%;
+                            transition: 400ms;
+                        }
+
+                        .curc:hover {
+                            background-color: $for_curc;
+                            transition: 400ms;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec8 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .human {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+
+                .person {
+                    height: 100%;
+                    width: 28%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-items: center;
+
+                    .img11 {
+                        width: 100%;
+                        height: 80%;
+
+                    }
+
+                    .textbox8 {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        h2 {
+                            @include for_text(roboto, 18px, 700, 18px, 1px, left, $tc4 )
+                        }
+
+                        .p12 {
+                            @include for_text(roboto, 14px, 700, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec9 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .servisces {
+                width: 70%;
+                height: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .box2 {
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                    }
+
+                    ul {
+                        width: 80%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        li {
+                            @include for_text(roboto, 14px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec10 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec11 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .zayav {
+                width: 80%;
+                height: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                .form {
+                    width: 45%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .first {
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .second {
+
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .third {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            width: 50%;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 30%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .but2 {
+                        width: 40%;
+                        height: 10%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $tc1;
+                        border: 1px solid $tc7;
+                        transition: 400ms;
+
+                        .p13 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .but2:hover {
+                        border: 1px solid $tc6;
+                        transition: 400ms;
+                    }
+                }
+            }
+
+            .textbox9 {
+                width: 45%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .textbox10 {
+                    width: 60%;
+                    height: 20%;
+
+                    .p14 {
+                        @include for_text(roboto, 24px, 400, 30px, 1px, left, $tc4 )
+                    }
+
+                }
+            }
+
+            .social {
+                width: 40%;
+                height: 10%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .h5 {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                    }
+
+                }
+
+                .h5:nth-child(2) {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc8 )
+                    }
+
+                }
+
+                .h5 {
+                    .a3:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .foot {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tc8;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1280px) {
+
+    .wrap {
+        width: 100%;
+        height: 11500px;
+
+        .hed {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            z-index: 5;
+            background-color: #00000043;
+
+
+            .img1 {
+                border: none;
+                z-index: 5;
+            }
+
+            .img10 {
+                display: none;
+            }
+
+            .navbar {
+                width: 70%;
+                display: flex;
+                z-index: 5;
+
+                ul {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    li .a1 {
+                        text-transform: uppercase;
+                        transition: 400ms;
+                        @include for_text(roboto, 20px, 400, 28px, 1px, left, $tc1 )
+                    }
+
+                    .a1:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 20px, 400, 28px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .sec1 {
+            width: 100%;
+            height: 1000px;
+            background-image: url(../img/Rectangle75.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .shadow {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+
+            .con1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 40%;
+                height: 85%;
+
+                .box1 {
+                    height: 85%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .textbox1 {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        .h1 {
+                            height: 25%;
+                            @include for_text(raleway, 150px, 700, 21px, 1px, left, $tc2 )
+                        }
+
+                        .p1 {
+                            @include for_text(roboto, 18px, 400, 21px, 1px, left, $tc3 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec2 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 28px, 600, 56px, 10px, left, $tc3 )
+            }
+
+
+            .textboxes {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+
+
+
+
+                .text1 {
+
+                    width: 35%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+
+
+                    .p2 {
+                        height: 25%;
+                        @include for_text(roboto, 18px, 300, 20px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec3 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: $tc0;
+
+            .h21 {
+                text-transform: uppercase;
+                @include for_text(raleway, 35px, 600, 58px, 1px, left, $tc5 )
+            }
+
+
+            .what_have {
+                width: 80%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .boxes {
+                    width: 32%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .with_img {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        h2 {
+                            @include for_text(roboto, 20px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .p3 {
+                        height: 55%;
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+
+            .info {
+                width: 80%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                .with_wave {
+                    width: 35%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .wawes {
+                        .procent_wawes {
+                            display: flex;
+
+                            .p4 {
+                                @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4)
+                            }
+                        }
+
+                        .p5 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+
+                .textbox2 {
+                    height: 80%;
+                    width: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .p6 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4)
+                    }
+                }
+            }
+        }
+
+        .sec4 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .img9 {
+                width: 50%;
+                height: 70%;
+            }
+
+            .textbox3 {
+                width: 40%;
+                height: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+                }
+
+                .with_smalltext {
+                    width: 100%;
+                    height: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    p {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec5 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .navigation {
+                width: 61.3%;
+                height: 60%;
+
+                .textbox4 {
+                    width: 53%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        li .a2 {
+                            text-transform: uppercase;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc5);
+                            transition: 400ms;
+                        }
+
+                        .a2:hover {
+                            cursor: pointer;
+                            transition: 400ms;
+                            text-decoration: underline;
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                        }
+                    }
+                }
+
+                .imgbox {
+                    width: 100%;
+                    height: 480px;
+                    display: grid;
+                    gap: 40px;
+
+                    grid-template-columns: repeat(4, 1fr);
+
+
+
+                    .grid {
+
+                        transition: 400ms;
+                    }
+
+                    .grid:hover {
+                        filter: blur(3px);
+                        transition: 400ms;
+                    }
+
+                    .grid:nth-child(1) {
+                        grid-area: 1/1/2/3;
+                        background-image: url(../img/Rectangle\ 89.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(2) {
+                        grid-area: 1/3/2/4;
+                        background-image: url(../img/Rectangle\ 91.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(3) {
+                        grid-area: 1/4/2/5;
+                        background-image: url(../img/Rectangle\ 93.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(4) {
+                        grid-area: 2/1/3/2;
+                        background-image: url(../img/Rectangle\ 94.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(5) {
+                        grid-area: 2/2/3/3;
+                        background-image: url(../img/Rectangle\ 92.png);
+                        background-size: cover;
+                    }
+
+                    .grid:nth-child(6) {
+                        grid-area: 2/3/3/5;
+                        background-image: url(../img/Rectangle\ 90.png);
+                        background-size: cover;
+                    }
+
+                }
+            }
+
+            .but1 {
+                width: 20%;
+                height: 60px;
+                background-color: $tc1;
+                border: 2px solid $tc7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 400ms;
+
+                .p8 {
+                    text-transform: uppercase;
+                    @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .but1:hover {
+                border: 2px solid $tc3;
+                transition: 400ms;
+            }
+        }
+
+        .sec6 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .textbox5 {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    font-style: italic;
+                    @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                }
+
+                .with_p {
+                    width: 40%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .p9 {
+                    font-style: italic;
+                    @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                }
+            }
+
+            .vid1 {
+                width: 55%;
+                height: 65%;
+            }
+        }
+
+        .statistic {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+
+            .static {
+                width: 50%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+
+
+                .textbox6 {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 64px, 700, 76px, 1px, left, $tc5 )
+                    }
+
+                    .p10 {
+                        @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc4 )
+                    }
+                }
+            }
+        }
+
+        .sec7 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .with_img2 {
+                width: 100%;
+                height: 80%;
+                background-color: rgba(0, 0, 0, 0.315);
+                background-image: url(../img/Rectangle\ 103.png);
+                background-size: cover;
+
+                .shadov {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0000003e;
+
+                    .textbox7 {
+                        width: 37%;
+
+                        position: relative;
+                        left: 53%;
+                        top: 40%;
+                        z-index: 5;
+
+                        h2 {
+                            @include for_text(roboto, 48px, 400, 56px, 1px, left, $tc1 )
+                        }
+
+                        .p11 {
+                            @include for_text(roboto, 14px, 300, 18px, 1px, left, $tc1 )
+                        }
+                    }
+
+                    .curcle {
+                        width: 25%;
+                        position: relative;
+                        left: 35%;
+                        top: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        z-index: 5;
+
+                        .curc {
+                            width: 15px;
+                            height: 15px;
+                            background-color: $tc1;
+                            border-radius: 50%;
+                            transition: 400ms;
+                        }
+
+                        .curc:hover {
+                            background-color: $for_curc;
+                            transition: 400ms;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec8 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .human {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+
+                .person {
+                    height: 100%;
+                    width: 28%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-items: center;
+
+                    .img11 {
+                        width: 100%;
+                        height: 80%;
+
+                    }
+
+                    .textbox8 {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        h2 {
+                            @include for_text(roboto, 18px, 700, 18px, 1px, left, $tc4 )
+                        }
+
+                        .p12 {
+                            @include for_text(roboto, 14px, 700, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec9 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: $tc0;
+
+            h2 {
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc4 )
+            }
+
+            .servisces {
+                width: 70%;
+                height: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .box2 {
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h2 {
+                        @include for_text(roboto, 36px, 400, 40px, 1px, left, $tc4 )
+                    }
+
+                    ul {
+                        width: 80%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        li {
+                            @include for_text(roboto, 14px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+                }
+            }
+        }
+
+        .sec10 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec11 {
+            width: 100%;
+            height: 1000px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                text-transform: uppercase;
+                @include for_text(raleway, 48px, 600, 56px, 1px, left, $tc5 )
+            }
+
+            .zayav {
+                width: 80%;
+                height: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                .form {
+                    width: 45%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    .first {
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .second {
+
+                        height: 10%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 60%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .third {
+                        width: 100%;
+                        height: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .label {
+                            width: 50%;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc8 )
+                        }
+
+                        .input {
+                            width: 100%;
+                            height: 30%;
+                            border: none;
+                            border-bottom: 2px solid $for_border;
+                            @include for_text(roboto, 18px, 400, 19px, 1px, left, $tc3 )
+                        }
+                    }
+
+                    .but2 {
+                        width: 40%;
+                        height: 10%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $tc1;
+                        border: 1px solid $tc7;
+                        transition: 400ms;
+
+                        .p13 {
+                            @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                        }
+                    }
+
+                    .but2:hover {
+                        border: 1px solid $tc6;
+                        transition: 400ms;
+                    }
+                }
+            }
+
+            .textbox9 {
+                width: 45%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .textbox10 {
+                    width: 60%;
+                    height: 20%;
+
+                    .p14 {
+                        @include for_text(roboto, 24px, 400, 30px, 1px, left, $tc4 )
+                    }
+
+                }
+            }
+
+            .social {
+                width: 40%;
+                height: 10%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .h5 {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc4 )
+                    }
+
+                }
+
+                .h5:nth-child(2) {
+                    .a3 {
+                        transition: 400ms;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc8 )
+                    }
+
+                }
+
+                .h5 {
+                    .a3:hover {
+                        cursor: pointer;
+                        transition: 400ms;
+                        text-decoration: underline;
+                        @include for_text(roboto, 24px, 400, 18px, 1px, left, $tc6)
+                    }
+                }
+            }
+        }
+
+        .foot {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $tc8;
+        }
+    }
+}
